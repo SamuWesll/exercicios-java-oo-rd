@@ -5,6 +5,8 @@ import java.util.TreeSet;
 
 public class NumeroPrimo {
 
+    Set<Integer> primos = new TreeSet<>();
+
     /**
      * Retorna um conjunto contendo os números primos contidos num conjunto de inteiros passado no parâmetro,
      *
@@ -19,7 +21,15 @@ public class NumeroPrimo {
      * @return Set<Integer>
      */
     public Set<Integer> getNumerosPrimosDe(Set<Integer> numeros) {
-        // TODO: implemente o código deste método
+
+        for(int numero : numeros) {
+            if((numero / numero) == 1 || (numero / 1) ==1) {
+//                numero primo
+            } else {
+                numeros.remove(numero);
+            }
+        }
+
         return null;
     }
 

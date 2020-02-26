@@ -1,7 +1,11 @@
 package exercicio02;
 
-public class Gerente {
+public class Gerente extends Funcionario {
 
-    // TODO: implemente o código desta classe
+    private Double insalubridade;
 
+    public Gerente(String nome, Double salarioMensal, float insalubridade) {
+        super(nome, salarioMensal);
+        this.insalubridade = salarioMensal * insalubridade;
+    }
 }
